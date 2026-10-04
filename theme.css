@@ -1,0 +1,40 @@
+/* JelasVerse theme: warm paper, hand-made feel, dyslexia-friendly reading.
+   Loads after base.css and overrides it. */
+:root{
+  --display:'Lora',Georgia,serif;
+  --body:'Atkinson Hyperlegible',Verdana,sans-serif;
+  --r4:2px;--r8:3px;--r12:4px;--r16:4px;--r24:6px;
+  --s1:none;--s2:none;--s3:none;--s4:none;
+  --cream:#f6efe4;--linen:#eee3d3;--sand:#dccbb3;
+}
+body{
+  font-size:18px;line-height:1.8;letter-spacing:.012em;word-spacing:.08em;
+  background-color:var(--cream);
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 .42 0 0 0 0 .31 0 0 0 0 .2 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+p,li{max-width:68ch}
+.d1,.d2,.d3{font-weight:600;letter-spacing:-.01em}
+.d1{line-height:1.08}
+.eyebrow{letter-spacing:.08em;font-size:13px}
+.btn{border-radius:3px;font-weight:700;font-size:16px}
+.btn:hover{transform:none;filter:none;text-decoration:underline;text-underline-offset:4px}
+.nav{background:var(--cream);border-bottom:2px solid var(--brown-dark)}
+.ticker,.hero-scroll,.scroll-dot,.hero-label-dot,.hero-float-badge{display:none!important}
+.sc-ico,.rep-ico,.pt-ico,.af-ico,.s-card-ico,.mi-icon,.bc-ico,.ic-ico,.hiw-callout-ico,.hero-proof-mark{display:none!important}
+.badge,.tag{border-radius:2px;letter-spacing:.04em}
+*{box-shadow:none!important;backdrop-filter:none!important}
+.reveal{transition-duration:.3s;transform:none}
+[class*="card"],[class*="tile"],.bento>*{border-radius:3px!important;border:1px solid var(--warm-beige)}
+[class*="card"]:hover,[class*="tile"]:hover{transform:none!important}
+img{border-radius:2px;object-fit:cover;min-height:240px;background:linear-gradient(135deg,var(--sand),var(--warm-beige))}
+.hero-img-frame,[class*="img-frame"]{
+  background:var(--sand);border:10px solid #fffaf2!important;border-radius:2px!important;
+  outline:1px solid var(--warm-beige);overflow:hidden}
+.hero-img-frame{transform:rotate(-1.2deg)}
+.hero-float-card{position:relative!important;inset:auto!important;margin:-28px 0 0 28px;
+  background:#fff8e8;border:1px solid var(--warm-beige);border-left:4px solid var(--terra);
+  border-radius:2px;transform:rotate(1deg)}
+p a,li a{text-decoration:underline;text-underline-offset:3px}
+::selection{background:#e6c9a8}
+:focus-visible{outline:3px solid var(--terra);outline-offset:3px}
+@media(max-width:700px){body{font-size:17px}.hero-float-card{margin:-20px 0 0 8px}}
